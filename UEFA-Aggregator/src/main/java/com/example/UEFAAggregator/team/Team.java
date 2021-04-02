@@ -20,26 +20,28 @@ public class Team {
 
     private Integer teamId;
     private String teamName;
+    private Integer leagueId;
     private int rank;
     private int points;
-    private String leagueName;
+
+
+
 
     public Team() {
     }
 
-    public Team(String teamName, int teamId, int rank, int points, String leagueName) {
+    public Team(String teamName, int teamId, int rank, int points, Integer leagueId) {
         this.teamName = teamName;
         this.teamId = teamId;
         this.rank = rank;
         this.points = points;
-        this.leagueName = leagueName;
+        this.leagueId = leagueId;
     }
 
-    public Team(String teamName, int rank, int points, String leagueName) {
+    public Team(String teamName, int rank, int points) {
         this.teamName = teamName;
         this.rank = rank;
         this.points = points;
-        this.leagueName = leagueName;
     }
 
     public String getTeamName() {
@@ -58,8 +60,8 @@ public class Team {
         return points;
     }
 
-    public String getLeagueName() {
-        return leagueName;
+    public Integer getLeagueId() {
+        return leagueId;
     }
 
 
@@ -80,8 +82,8 @@ public class Team {
         this.points = points;
     }
 
-    public void setLeagueName(String leagueName) {
-        this.leagueName = leagueName;
+    public void setLeagueId(Integer leagueId) {
+        this.leagueId = leagueId;
     }
 
     @Override

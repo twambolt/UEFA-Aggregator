@@ -16,14 +16,11 @@ public class TeamConfig {
             Team realMadrid = new Team(
                     "Real Madrid",
                     1,
-                    100,
-                    "La Liga");
+                    100);
             Team barca = new Team(
                             "Barcelona",
                             2,
-                            90,
-                            "La Liga"
-                    );
+                            90);
             teamRepository.saveAll(
                     List.of(realMadrid, barca)
             );
